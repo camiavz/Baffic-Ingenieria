@@ -1,0 +1,265 @@
+body {
+  padding-top: 0; 
+}
+
+#banner {
+  position: relative;
+  height: 50vh; 
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.navbar-brand-color {
+  color: #228B22 !important; 
+  font-family: 'DM Sans', sans-serif;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Imagenes/fondo-inicio.jpg);
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.banner-content {
+  color: white;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.logo-container {
+  width: 280px; 
+  padding-top: 110px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.logo-text {
+  margin-top: 10px;
+}
+
+
+
+.section {
+  padding: 0; 
+}
+
+
+/* sección "Sobre nosotros" */
+.sobre-nosotrosfont{
+  color: #3F6C51 !important; 
+  font-family: 'DM Sans', sans-serif;
+
+}
+
+.subtitulos{
+  color: #3F6C51 !important; 
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'EB Garamond', serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.about-section {
+  padding: 50px 0;
+
+}
+
+.about-content {
+  background-color: rgba(255, 255, 255, 0.9); 
+  color: black; 
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 150px;
+
+}
+
+.about-slide:hover .about-content {
+  transform: scale(1.1); 
+}
+
+.staff-image {
+  margin-top: 20px; 
+}
+
+.staff-image img {
+  width: 80%;
+  height: 400px;
+  border-radius: 10px;
+  margin-left: 70px;
+}
+
+
+ /* sección "Nuestros Servicios" */
+ #nuestros-servicios{
+  background-image: url(./Imagenes/background3.jpg);
+  padding-left: 13px;
+}
+
+.servicios{
+  padding-top: 15px;
+}
+
+ .service-card {
+  height: 450px;
+  padding: 15px;
+  border: 2px solid #556B2F; 
+  border-radius: 10px;
+  margin: 10px;
+  width: 7cm; 
+  text-align: center;
+  background-color: #f5f5f5; 
+}
+
+.service-card:hover {
+  transform: scale(1.3);
+
+}
+.service-card img {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+}
+
+.service-card p {
+  font-size: 16px;
+}
+
+/* Para dispositivos pequeños*/
+@media (max-width: 576px) {
+    .service-card {
+      width: 100%;
+      height: 400px;
+    }
+    #nuestros-servicios{
+      padding-right: 20px;  }
+
+      .about-content {
+        background-color: rgba(255, 255, 255, 0.9); 
+        color: black; 
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+        margin-top: 5px;  
+  }
+  .staff-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 40px;
+  }
+}
+
+/* sección "Nuestros Proyectos" */
+#nuestros-proyectos {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+
+#proyectos-carousel img {
+  height: 13cm;
+  object-fit: cover;
+}
+
+
+
+.map-container {
+  width: 60%;
+  margin: 0 auto; 
+  padding-bottom: 40%; 
+  margin-top: 20px;
+  position: relative;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .map-container {
+    width: 60%;
+    margin: 0 auto; 
+    padding-bottom: 80%; 
+    margin-top: 15px;
+    position: relative;
+  }
+}
+
+
+
+.footer {
+  background-color: #f0f0f0; 
+  padding: 15px 0;
+  color: #228B22; 
+  margin-top: 50px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 30px; 
+}
+
+.btn-contact, .btn-work {
+  color: #228B22;
+  padding: 10px 20px;
+  margin: 10px 0px 0 0px;
+}
+
+.btn-contact:hover, .btn-work:hover {
+  color: #fff;
+  background-color: #228B22;
+}
+
+.logoFooter p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+
