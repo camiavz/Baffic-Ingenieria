@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Baffic Ingenieria</title>
+  <link rel="icon" type="image/png" href="./Imagenes/logoBaffic.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="baffic.css"> 
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand navbar-brand-color" href="#">Baffic Ingenieros</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nuestros-servicios">Nuestros Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nuestros-proyectos">Nuestros Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contactanos">Contáctanos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Banner con video de fondo -->
+  <div id="banner" class="section">
+    <div class="video-container">
+      <video autoplay loop muted>
+        <source src="./Imagenes/planos-background.jpg" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="overlay"></div>
+    <div class="container text-center banner-content">
+      <div class="logo-container">
+        <img src="./Imagenes/logoBaffic.png" alt="Logo de la empresa" class="logo">
+      </div>
+      <div class="logo-text">
+        <h2>Baffic soluciones de calidad</h2>
+      </div>
+    </div>
+  </div>
+
+ <!-- Sección "Sobre nosotros" -->
+ <div id="sobre-nosotros" class="section about-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div id="about-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="about-content">
+                <h2 class="sobre-nosotrosfont">NOSOTROS</h2>
+                <p>Trabajamos con dedicación para lograr respuestas innovadoras y de calidad de manera eficiente.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="about-content">
+                <h2 class="sobre-nosotrosfont">MISIÓN</h2>
+                <p>Lograr soluciones integrales y a medida, con especial consideración de cada cliente y sus necesidades, satisfaciendo las expectativas de calidad, seguridad y creando soluciones sustentables y sostenibles en el tiempo.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="about-content">
+                <h2 class="sobre-nosotrosfont">VISIÓN</h2>
+                <p>Convertirnos en una empresa que en base a la experiencia pueda transformarse en una referencia de soluciones de ingeniería a los problemas más desafiantes.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#about-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#about-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="staff-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkzhbY8bWaypWcftR6BETziznZ7ujkwq_RQcbbffKNwC0SwiQfcdv8Yw8zZIa6P_ZiNZM&usqp=CAU" alt="Imagen del staff" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <!-- Sección "Nuestros Servicios" -->
+   <div id="nuestros-servicios" class="section">
+    <div class="container">
+      <h2 class="subtitulos">Nuestros Servicios</h2>
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-4 mb-4">
+          <div class="service-card">
+            <img src="./Imagenes/iconos-obras.png" alt="Icono de herramienta">
+            <h3>Obras</h3>
+            <p>Obras públicas y privadas</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="service-card">
+            <img src="./Imagenes/icono-rascacielos.png" alt="Icono de herramienta">
+            <h3>Cálculo estructural</h3>
+            <p>Diseño y cálculo de estructuras. Casas. Edificios. Naves industriales. Estructuras de hormigón, metálicas y madera.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="service-card">
+            <img src="./Imagenes/icono-sistemadebombeo.png" alt="Icono de herramienta">
+            <h3>Sistema de bombeo</h3>
+            <p>Diseño, cálculo y verificación para sistemas de impulsión de fluidos.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="service-card">
+            <img src="./Imagenes/icono-nube3.png" alt="Icono de herramienta">
+            <h3>Estudios hídricos e hidrológicos</h3>
+            <p>Gestión de cuencas. Aprovechamiento integral del agua como recurso.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="service-card">
+            <img src="./Imagenes/icono-diseños.png" alt="Icono de herramienta">
+            <h3>Diseño</h3>
+            <p>Proyecto arquitectónico. Cumplimiento de normativas según organismo de control. Documentación necesaria para presentación en municipio.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="service-card">
+            <img src="./Imagenes/icono-energreno2.png" alt="Icono de herramienta">
+            <h3>Energía renovables</h3>
+            <p>Proyecto integral o solución en particular. Energía solar y eólica.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="service-card">
+            <img src="./Imagenes/icono-redes2.png" alt="Icono de herramienta">
+            <h3>Redes</h3>
+            <p>Diseño, cálculo y verificación de redes de agua potable, cloacas y pluviales.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="service-card">
+            <img src="./Imagenes/icono-instalaciones termicas.png" alt="Icono de herramienta">
+            <h3>Instalación térmica, sanitaria y de gas</h3>
+            <p>Diseño, cálculo y verificación de instalaciones domiciliarias e industriales. Normativa correspondiente según destino.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="nuestros-proyectos" class="section">
+    <div class="container">
+      <h2 class="subtitulos">Nuestros Proyectos</h2>
+
+      <div id="proyectos-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#proyectos-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#proyectos-carousel" data-slide-to="1"></li>
+          <li data-target="#proyectos-carousel" data-slide-to="2"></li>
+
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://png.pngtree.com/thumb_back/fw800/background/20230715/pngtree-innovative-construction-industry-and-internet-of-things-a-visualization-of-modern-image_3864269.jpg" class="d-block w-100" alt="Proyecto 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/carrusel 4.jpg" class="d-block w-100" alt="Proyecto 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/prueba-carrusel2.webp" class="d-block w-100" alt="Proyecto 3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#proyectos-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#proyectos-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17iNFCV7eXoLx5wC6wr7mLsd1KrVM6bs&ehbc=2E312F" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  
+   <!-- Sección "Contactanos" -->
+   <footer id="contactanos" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <ul class="social-icons">
+            <li><a href="https://www.instagram.com/bafficingenieria/" target="_blank"><img src="./Imagenes/icono-instagram.png" alt="instagram"></a></li>
+            <li><a href="https://twitter.com/bafficinfo" target="_blank"><img src="./Imagenes/icono-twitter.png" alt="instagram"></a></a></li>
+            <li><a href="https://www.linkedin.com/company/baffic-ingenieria?trk=biz-companies-cym" target="_blank"><img src="./Imagenes/icono-linkedin.png" alt="linkedin"></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12 text-center">
+          <a href="https://docs.google.com/forms/d/1hURVdjVp57nQAZZsrY8UPFZQRT48B5r5HDd_69K_skc/edit" class="btn btn-contact">Contáctanos</a>
+          <a href="https://docs.google.com/forms/d/14sNP8KFUD4x-qPtKVQTYoD-TfTK49QCt_yYb0LVODNg/edit#responses" class="btn btn-work">Trabaja con nosotros</a>
+        </div>
+        <div class="logoFooter col-lg-12 text-center">
+          <p>© 2020 BAFFIC INGENIERÍA</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+     
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
