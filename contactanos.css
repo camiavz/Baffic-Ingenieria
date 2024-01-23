@@ -1,0 +1,50 @@
+body {
+    font-family: 'Georgia', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 600px; /* Ajusta el ancho del formulario según sea necesario */
+    margin: 50px auto; /* Centra el formulario en la página */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    color: #28a745; /* Verde principal */
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    color: #218838; /* Verde oscuro para etiquetas */
+  }
+
+  input, textarea {
+    border: 1px solid #28a745; /* Borde verde para campos de entrada */
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    background-color: #28a745; /* Verde principal para el botón */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #218838; /* Verde oscuro al pasar el ratón por encima */
+  }

@@ -1,0 +1,95 @@
+
+
+body {
+    font-family: 'Georgia', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+  }
+
+
+h2 {
+    text-align: center;
+    color: #28a745; /* Verde principal */
+  }
+
+
+
+
+
+.destacado-section {
+    background-color: #dbd7d7de; 
+    padding: 70px;
+}
+
+.destacado-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.producto-imagen {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+
+
+}
+
+
+
+.producto-imagen img {
+    width: 50%;
+    height: auto;
+}
+
+
+.producto-descripcion {
+    max-width: 700px !important;
+    flex: 1;
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: -15px; 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0; 
+    border-color: transparent #fff transparent transparent;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+    
+    .btn-contact {
+        margin-top: 10px;
+    }
+   
+    .destacado-container {
+        flex-direction: column; 
+    }
+
+    .arrow {
+        display: none; 
+    }
+
+    .producto-imagen img {
+        width: 50%;
+        height: auto;
+    }
+
+}
