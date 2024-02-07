@@ -1,24 +1,92 @@
-
-
 body {
     font-family: 'Georgia', sans-serif;
     background-color: #f8f9fa;
+    background-color: #f4f4f4;
+
     margin: 0;
     padding: 0;
     padding-top: 20px;
+   
   }
 
 
-h2 {
+  h3 {
     text-align: center;
     color: #28a745; /* Verde principal */
+    margin-bottom: 30px;
+    margin-top: 10px;
   }
 
+  .desarrollo {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    flex: 1;
+    max-width: 50%;
+    height: 500px;
+    order: 2; /* Cambia el orden en el escritorio */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.content {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    
+}
+
+.description {
+    color: #555;
+    display: flex;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .desarrollo {
+        flex-direction: column;
+    }
+
+    .image,
+    .content {
+        max-width: 100%;
+        order: 1; /* Cambia el orden en móvil */
+    }
+
+    .description {
+        margin-top: 5px;
+    }
+
+    /* Agrega alguna transformación en la entrada a la página */
+    .desarrollo {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .desarrollo.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
-
-
-.destacado-section {
+/*.destacado-section {
     background-color: #dbd7d7de; 
     padding: 70px;
 }
@@ -68,7 +136,7 @@ h2 {
     border-width: 10px 15px 10px 0; 
     border-color: transparent #fff transparent transparent;
     transform: translateY(-50%);
-}
+}*/
 
 @media (max-width: 768px) {
     .footer {
@@ -79,7 +147,7 @@ h2 {
         margin-top: 10px;
     }
    
-    .destacado-container {
+  /*  .destacado-container {
         flex-direction: column; 
     }
 
@@ -90,6 +158,47 @@ h2 {
     .producto-imagen img {
         width: 50%;
         height: auto;
-    }
+    }*/
 
 }
+
+#client-logo {
+    width: 800px;
+    display: flex;
+    flex-direction: row; /* Cambiado de columna a fila */
+    justify-content: center;
+    margin: 0 auto; /* Añadido para centrar el contenedor horizontalmente */
+  }
+  
+  #client-logo .clienteimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0; /* Ajustado a cero el margen entre las imágenes */
+  }
+  
+  #client-logo .clienteimg img {
+    width: 150px; /* Ajusta el ancho deseado para todas las imágenes */
+    height: 70px; /* Ajusta la altura deseada para todas las imágenes */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Puedes ajustar este valor según sea necesario */
+    margin-top: 40px;
+  }
+
+  @media (max-width: 576px) {
+
+
+    #client-logo {
+      max-width: 80%; /* Establece un ancho máximo para el contenedor */
+      margin: 0 auto; /* Centra el contenedor horizontalmente */
+      overflow: hidden; /* Evita que el carrusel se extienda más allá de los límites del contenedor */
+    }
+  }
+
+
+.footer {
+    clear: both;
+  }
